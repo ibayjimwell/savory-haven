@@ -30,7 +30,7 @@ export default function Menu() {
           }}
         />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <span className="text-red-400 font-medium tracking-wider uppercase text-sm">
+          <span className="text-orange-400 font-medium tracking-wider uppercase text-sm">
             Explore Our
           </span>
           <h1 className="text-5xl font-bold text-white mt-2 mb-4">
@@ -98,7 +98,7 @@ export default function Menu() {
           <div className="bg-white rounded-2xl p-8 shadow-sm border border-orange-100">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="flex items-center gap-4">
-                <div className="p-4 bg-orange-100 rounded-xl">
+                <div className="p-4 bg-red-100 rounded-xl">
                   <Wine className="w-8 h-8 text-red-600" />
                 </div>
                 <div>

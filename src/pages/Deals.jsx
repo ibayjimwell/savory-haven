@@ -11,7 +11,7 @@ export default function Deals() {
       <Navbar />
       
       {/* Hero */}
-      <section className="relative pt-32 pb-20 bg-gradient-to-br from-red-800 via-red-700 to-red-600">
+      <section className="relative pt-32 pb-20 bg-gradient-to-br from-red-800 via-red-700 to-orange-600">
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-20 left-10 w-72 h-72 bg-white/5 rounded-full blur-3xl" />
           <div className="absolute bottom-10 right-10 w-96 h-96 bg-red-500/20 rounded-full blur-3xl" />
@@ -34,9 +34,9 @@ export default function Deals() {
       <section className="bg-gray-900 py-4">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-center gap-4 text-white">
-            <Clock className="w-5 h-5 text-red-400" />
+            <Clock className="w-5 h-5 text-orange-400" />
             <span className="font-medium">Weekend deals available until Sunday midnight!</span>
-            <Tag className="w-5 h-5 text-red-400" />
+            <Tag className="w-5 h-5 text-orange-400" />
           </div>
         </div>
       </section>

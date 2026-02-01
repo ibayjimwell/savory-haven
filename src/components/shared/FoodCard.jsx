@@ -58,7 +58,7 @@ export default function FoodCard({ item, showAddToCart = true }) {
             className={`mt-4 w-full py-3 px-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-all duration-300 ${
               isAdded 
                 ? 'bg-green-500 text-white' 
-                : 'bg-red-50 text-red-600 hover:bg-red-100'
+                : 'bg-red-100 text-red-600 hover:bg-red-200'
             }`}
           >
             {isAdded ? (

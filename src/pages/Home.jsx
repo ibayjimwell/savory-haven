@@ -26,15 +26,15 @@ export default function Home() {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32">
           <div className="max-w-2xl">
             <div className="flex items-center gap-2 mb-6">
-              <div className="h-px w-12 bg-red-500" />
-              <span className="text-red-400 font-medium tracking-wider uppercase text-sm">
+              <div className="h-px w-12 bg-orange-500" />
+              <span className="text-orange-400 font-medium tracking-wider uppercase text-sm">
                 Welcome to Savory Haven
               </span>
             </div>
             
             <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Where Every Bite
-              <span className="block text-red-400">Tells a Story</span>
+              <span className="block text-orange-400">Tells a Story</span>
             </h1>
             
             <p className="text-xl text-gray-300 mb-8 leading-relaxed">
@@ -143,7 +143,7 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
             <div>
-              <span className="text-red-400 font-medium tracking-wider uppercase text-sm">
+              <span className="text-orange-400 font-medium tracking-wider uppercase text-sm">
                 Special Offers
               </span>
               <h2 className="text-4xl font-bold text-white mt-2">
@@ -152,7 +152,7 @@ export default function Home() {
             </div>
             <Link
               to={createPageUrl('Deals')}
-              className="mt-4 md:mt-0 inline-flex items-center gap-2 text-red-400 font-semibold hover:text-red-300 transition-colors"
+              className="mt-4 md:mt-0 inline-flex items-center gap-2 text-orange-400 font-semibold hover:text-orange-300 transition-colors"
             >
               View All Deals
               <ArrowRight className="w-5 h-5" />
@@ -177,12 +177,12 @@ export default function Home() {
                   <p className="text-gray-400 text-sm mb-4 line-clamp-2">{deal.description}</p>
                   <div className="flex items-center justify-between">
                     <div className="flex items-center gap-2">
-                      <span className="text-2xl font-bold text-red-400">${deal.price}</span>
+                      <span className="text-2xl font-bold text-orange-400">${deal.price}</span>
                       <span className="text-gray-500 line-through">${deal.originalPrice}</span>
                     </div>
                     <Link
                       to={createPageUrl('Deals')}
-                      className="px-4 py-2 bg-red-500 text-white font-medium rounded-lg hover:bg-red-600 transition-colors"
+                      className="px-4 py-2 bg-orange-500 text-white font-medium rounded-lg hover:bg-orange-600 transition-colors"
                     >
                       Get Deal
                     </Link>
