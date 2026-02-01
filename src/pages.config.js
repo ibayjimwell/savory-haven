@@ -58,17 +58,17 @@ import __Layout from './Layout.jsx';
 
 
 export const PAGES = {
-    "Home": Home,
-    "Menu": Menu,
-    "Deals": Deals,
-    "Branches": Branches,
-    "Reservation": Reservation,
-    "Cart": Cart,
-    "Contact": Contact,
+    "home": Home,
+    "menu": Menu,
+    "deals": Deals,
+    "branches": Branches,
+    "reservation": Reservation,
+    "cart": Cart,
+    "contact": Contact,
 }
 
 export const pagesConfig = {
-    mainPage: "Home",
+    mainPage: "home",
     Pages: PAGES,
     Layout: __Layout,
 };

@@ -6,6 +6,7 @@ import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
 import CartItem from '../components/shared/CartItem';
 import { useCart } from '../components/context/CartContext';
+import { Helmet } from "react-helmet-async";
 
 export default function Cart() {
   const { cartItems, getCartTotal, clearCart } = useCart();
@@ -15,6 +16,27 @@ export default function Cart() {
 
   return (
     <div className="min-h-screen bg-stone-50">
+
+      <Helmet>
+        <title>Savory Haven | Cart</title>
+        <meta
+          name="description"
+          content="Cart page for Savory Haven - sample restaurant website created by Jimwell Ibay."
+        />
+        <meta name="keywords" content="Savory Haven, Cart, Sample Website, Jimwell Ibay" />
+        <link rel="canonical" href="https://savory-haven-website.vercel.app/cart" />
+
+        <meta property="og:title" content="Savory Haven | Cart" />
+        <meta property="og:description" content="Cart page for Savory Haven - sample website by Jimwell Ibay." />
+        <meta property="og:url" content="https://savory-haven-website.vercel.app/cart" />
+        <meta property="og:image" content="https://savory-haven-website.vercel.app/logo-with-bg.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Savory Haven | Cart" />
+        <meta name="twitter:description" content="Cart page for Savory Haven - sample website by Jimwell Ibay." />
+        <meta name="twitter:image" content="https://savory-haven-website.vercel.app/logo-with-bg.png" />
+      </Helmet>
+
       <Navbar />
       
       {/* Hero */}

@@ -4,6 +4,7 @@ import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
 import FoodCard from '../components/shared/FoodCard';
 import { menuItems } from '../components/data/restaurantData';
+import { Helmet } from "react-helmet-async";
 
 const categories = [
   { id: 'starters', name: 'Starters', icon: Utensils, data: menuItems.starters },
@@ -17,6 +18,27 @@ export default function Menu() {
 
   return (
     <div className="min-h-screen bg-stone-50">
+
+      <Helmet>
+        <title>Savory Haven | Menu</title>
+        <meta
+          name="description"
+          content="Explore the menu of Savory Haven - a sample restaurant website by Jimwell Ibay."
+        />
+        <meta name="keywords" content="Savory Haven, Menu, Sample Website, Jimwell Ibay, React, Vite" />
+        <link rel="canonical" href="https://savory-haven-website.vercel.app/menu" />
+
+        <meta property="og:title" content="Savory Haven | Menu" />
+        <meta property="og:description" content="Explore the menu of Savory Haven - a sample website by Jimwell Ibay." />
+        <meta property="og:url" content="https://savory-haven-website.vercel.app/menu" />
+        <meta property="og:image" content="https://savory-haven-website.vercel.app/logo-with-bg.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Savory Haven | Menu" />
+        <meta name="twitter:description" content="Explore the menu of Savory Haven - a sample website by Jimwell Ibay." />
+        <meta name="twitter:image" content="https://savory-haven-website.vercel.app/logo-with-bg.png" />
+      </Helmet>
+
       <Navbar />
       
       {/* Hero */}

@@ -19,12 +19,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: 'Home', path: 'Home' },
-    { name: 'Menu', path: 'Menu' },
-    { name: 'Deals', path: 'Deals' },
-    { name: 'Branches', path: 'Branches' },
-    { name: 'Reservation', path: 'Reservation' },
-    { name: 'Contact', path: 'Contact' },
+    { name: 'Home', path: 'home' },
+    { name: 'Menu', path: 'menu' },
+    { name: 'Deals', path: 'deals' },
+    { name: 'Branches', path: 'branches' },
+    { name: 'Reservation', path: 'reservation' },
+    { name: 'Contact', path: 'contact' },
   ];
 
   return (

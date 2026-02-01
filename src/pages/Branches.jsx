@@ -4,10 +4,32 @@ import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
 import BranchCard from '../components/shared/BranchCard';
 import { branches } from '../components/data/restaurantData';
+import { Helmet } from "react-helmet-async";
 
 export default function Branches() {
   return (
     <div className="min-h-screen bg-stone-50">
+
+      <Helmet>
+        <title>Savory Haven | Branches</title>
+        <meta
+          name="description"
+          content="View the branches of Savory Haven - a sample restaurant website created by Jimwell Ibay."
+        />
+        <meta name="keywords" content="Savory Haven, Branches, Locations, Sample Website, Jimwell Ibay" />
+        <link rel="canonical" href="https://savory-haven-website.vercel.app/branches" />
+
+        <meta property="og:title" content="Savory Haven | Branches" />
+        <meta property="og:description" content="View the branches of Savory Haven - sample website by Jimwell Ibay." />
+        <meta property="og:url" content="https://savory-haven-website.vercel.app/branches" />
+        <meta property="og:image" content="https://savory-haven-website.vercel.app/logo-with-bg.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Savory Haven | Branches" />
+        <meta name="twitter:description" content="View the branches of Savory Haven - sample website by Jimwell Ibay." />
+        <meta name="twitter:image" content="https://savory-haven-website.vercel.app/logo-with-bg.png" />
+      </Helmet>
+
       <Navbar />
       
       {/* Hero */}

@@ -4,10 +4,32 @@ import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
 import DealCard from '../components/shared/DealCard';
 import { deals } from '../components/data/restaurantData';
+import { Helmet } from "react-helmet-async";
 
 export default function Deals() {
   return (
     <div className="min-h-screen bg-stone-50">
+
+      <Helmet>
+        <title>Savory Haven | Deals</title>
+        <meta
+          name="description"
+          content="Check out the latest deals and offers at Savory Haven - sample restaurant website by Jimwell Ibay."
+        />
+        <meta name="keywords" content="Savory Haven, Deals, Offers, Sample Website, Jimwell Ibay" />
+        <link rel="canonical" href="https://savory-haven-website.vercel.app/deals" />
+
+        <meta property="og:title" content="Savory Haven | Deals" />
+        <meta property="og:description" content="Check out the latest deals and offers at Savory Haven." />
+        <meta property="og:url" content="https://savory-haven-website.vercel.app/deals" />
+        <meta property="og:image" content="https://savory-haven-website.vercel.app/logo-with-bg.png" />
+
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Savory Haven | Deals" />
+        <meta name="twitter:description" content="Check out the latest deals and offers at Savory Haven." />
+        <meta name="twitter:image" content="https://savory-haven-website.vercel.app/logo-with-bg.png" />
+      </Helmet>
+
       <Navbar />
       
       {/* Hero */}

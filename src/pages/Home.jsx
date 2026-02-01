@@ -6,10 +6,30 @@ import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
 import FoodCard from '../components/shared/FoodCard';
 import { featuredDishes, deals, branches, testimonials } from '../components/data/restaurantData';
+import { Helmet } from "react-helmet-async";
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-cream-50">
+
+      <Helmet>
+        <title>Savory Haven | Home</title>
+        <meta
+          name="description"
+          content="Savory Haven - Sample restaurant website homepage by Jimwell Ibay. Showcasing React and Vite web development skills."
+        />
+        <meta name="keywords" content="Savory Haven, Home, React, Vite, Sample Website, Jimwell Ibay" />
+        <meta property="og:title" content="Savory Haven | Home" />
+        <meta property="og:description" content="Sample restaurant website homepage created by Jimwell Ibay." />
+        <meta property="og:url" content="https://savory-haven-website.vercel.app/" />
+        <meta property="og:image" content="https://savory-haven-website.vercel.app/logo-with-bg.png" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Savory Haven | Home" />
+        <meta name="twitter:description" content="Sample restaurant website homepage created by Jimwell Ibay." />
+        <meta name="twitter:image" content="https://savory-haven-website.vercel.app/logo-with-bg.png" />
+        <link rel="canonical" href="https://savory-haven-website.vercel.app/" />
+      </Helmet>
+
       <Navbar />
       
       {/* Hero Section */}
