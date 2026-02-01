@@ -47,13 +47,13 @@
  *
  * The mainPage value must match a key in the PAGES object exactly.
  */
-import Home from './pages/Home';
-import Menu from './pages/Menu';
-import Deals from './pages/Deals';
-import Branches from './pages/Branches';
-import Reservation from './pages/Reservation';
-import Cart from './pages/Cart';
-import Contact from './pages/Contact';
+import Home from './pages/Home.jsx';
+import Menu from './pages/Menu.jsx';
+import Deals from './pages/Deals.jsx';
+import Branches from './pages/Branches.jsx';
+import Reservation from './pages/Reservation.jsx';
+import Cart from './pages/Cart.jsx';
+import Contact from './pages/Contact.jsx';
 import __Layout from './Layout.jsx';
 
 

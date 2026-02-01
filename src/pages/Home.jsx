@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '@/utils';
+import { createPageUrl } from '../utils';
 import { ArrowRight, Star, ChefHat, Award, Users, Clock, Utensils, MapPin, Quote } from 'lucide-react';
 import Navbar from '../components/shared/Navbar';
 import Footer from '../components/shared/Footer';
